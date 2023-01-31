@@ -1,0 +1,65 @@
+.crypto .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container .coins-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 1rem;
+    flex-grow: 1;
+}
+
+.coins-row .coins{
+    width: 200px;
+    border: 2px solid var(--background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    padding: 2rem 0;
+    border-radius: 10px;
+}
+
+.coins img {
+    width: 100px;
+}
+
+.coins h5{
+    font-size: 2rem;
+}
+
+coin-price {
+    font-size: 1.5rem;
+}
+
+.red {
+    color: rgb(237, 67, 67);
+}
+
+.green {
+    color: var(--primary);
+}
+
+.description-row {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+@media screen and (max-width: 900px) {
+    .crypto .container {
+        grid-template-columns: repeat(1, 1fr)
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .coins-row .coins{
+        width: 200px;
+    }
+
+
+}
+

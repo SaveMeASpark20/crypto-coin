@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:ital,wght@0,400;0,600;0,700;1,500&display=swap');
+
+:root {
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --primary: rgb(0, 134, 38); 
+    --background: rgb(213, 213, 213);
+}
+
+body {
+    font-size: 1.6rem; 
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+}
+
+.primary {
+    color: var(--primary);
+}
+
+.background {
+   color: var(--background);
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+
+p {
+    font-size: 2rem;
+}
+
+button {
+    padding: 1rem 2rem;
+    border-radius:  10px 10px;
+    font-size: 1.8rem;
+    background-color: var(--primary);
+    color: rgb(255, 255, 255);
+    border: none;
+    margin-top: 2rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 470px) {
+
+    button {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+}
